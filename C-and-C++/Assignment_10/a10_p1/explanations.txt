@@ -1,0 +1,14 @@
+//CH 230-A
+//Irfan Karmali
+//i.karmali@jacobs-university.de
+//a10_p1
+
+Commenting out "using namespace std" is similar to not including a library. The function
+or function definition is not present in your code hence the reason for the errors. This
+could be fixed by adding "std::" everytime you call string functions, including cin and cout. 
+
+Commenting out "Critter ::" The variable name that you are trying to edit is only present in Critter class. 
+Hence the compiler doesn't recognize it since the path to the variable type in absent. "Critter::" specifies
+the name of the class it belongs to hence also allowing you to modify that particular variable. To fix this you 
+could make the variable "name" under class critter public so that you can easily modify the "name" in the main 
+function using "c.name = name" without needing to call a function.
