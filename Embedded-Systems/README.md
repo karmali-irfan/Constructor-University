@@ -1,4 +1,14 @@
 # Embedded-Systems
 
-The microcontrolled used for these labs is the ATmega328. The datasheet can be found online with ease. 
-I have uploaded all the assignments from our Embedded Systems Lab. The first few labs cover the basics of working with a microcontroller and coding in Embedded C. However, the FinalTasks wholly encompass all concepts covered and taught throughout the lab course. 
+This section contains coursework and projects focused on Embedded Systems. These projects highlight my skills in designing and programming embedded systems, showcasing my ability to work with low-level hardware and software.
+
+The microcontroller used for these labs is the **ATmega328**. The datasheet can be found online with ease. 
+
+  - **Concepts that were covered throughout the course**
+    - Basic architecture of a microcontroller
+    - Understanding the datasheet of a microcontroller
+    - Programming a microcontroller to read/control sensors/actuators, process interrupters, generate PWM, and perform AD/DA conversion
+    - Designing a solution for an embedded application by microcontroller 
+
+
+
