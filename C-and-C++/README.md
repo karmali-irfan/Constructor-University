@@ -10,5 +10,6 @@ This section contains assignments, labs, and projects related to programming usi
       - Concepts and applications of function and operator overloading and polymorphism
       - Data Structures, dynamic and static memory allocation
       - Writing, testing, and debugging programs in the object-oriented programming language C++
-  
-      
+        
+
+All Assignment directories contain 'pdf files' that contain all the assignment questions/parts. The files are labelled in the manner "a1_p2.c" which stands for Assignment 1 Part 2. 
