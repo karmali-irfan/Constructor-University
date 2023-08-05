@@ -1,4 +1,8 @@
 # Arduino
 
-We were experimenting with the basic set-up and uses of Arduino during our lab sessions. I have uploaded all relevant and completed assignments
-about Arduino from our lab sessions.
+In this section, you'll find a collection of projects and experiments involving Arduino microcontrollers. These projects demonstrate my ability to work with hardware components, program microcontrollers, and create interactive systems.
+  -**The tasks that were assigned entailed the following**
+    - Programming the open-source electronic prototyping platform Arduino
+    - Interfacing Arduinos to several different sensors and actuators
+
+    
