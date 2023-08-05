@@ -12,17 +12,18 @@ The RISProject folder contains coursework and projects related to a Duckiebot in
 
 ## 5. Computer Vision
 In this section, I delve into the exciting field of Computer Vision. You'll find assignments and projects that demonstrate my understanding of image processing, object detection, and other computer vision techniques.
-Embedded Systems
 
+## 6. Embedded Systems
 Explore this folder to find coursework and projects focused on Embedded Systems. These projects highlight my skills in designing and programming embedded systems, showcasing my ability to work with low-level hardware and software.
 
-#How to Navigate the Repository
+# How to Navigate the Repository
 Each course has its dedicated folder, and within each folder, you'll find subfolders and files for different projects, assignments, and labs. Here's a quick guide to navigating the repository:
 
-Course Folder
-Contains subfolders for individual projects or topics within the course.
-Each project/topic subfolder includes its own README file, providing details about the project, its goals, and how to run or use it.
+- **Course Folder**
+  - Contains subfolders for individual projects or topics within the course.
+  - Each project/topic subfolder includes its own README file, providing details about the project, its goals, and how to run or use it.
+
 Feel free to browse through the repository, explore the code, and gain insights into my academic journey and technical skills development.
 
-Getting Started
+## Getting Started
 If you'd like to run any of the projects or explore the code, follow the instructions provided in the respective README files within each project's subfolder. You may need specific software, libraries, or hardware components to successfully run some projects.
