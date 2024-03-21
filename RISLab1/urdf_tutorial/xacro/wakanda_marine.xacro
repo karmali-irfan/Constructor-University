@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+
+
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="wakanda_marine">
+
+  
+<xacro:property name="axis_o" value="0 1 0"/>
+<xacro:property name="axle_s" value="0.07 0.3 0.07"/>
+
+
+    <link name="base_link">
+        <visual>
+            <geometry>
+                <box size="0.8 0.2 0.1"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <box size="0.8 0.2 0.1"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <mass value="0.2"/>
+            <inertia ixx="0.4" ixy="0.0" ixz="0.0" iyy="0.4" iyz="0.0" izz="0.2"/>
+        </inertial>
+    </link>
+    <gazebo reference="base_link">
+        <material>Gazebo/White</material>
+    </gazebo>
+
+
+
+    <xacro:macro name="axle" params="prefix reflect">
+    <link name="${prefix}_axle">
+        <center_of_buoyancy>"0.0 0.0 0.0"</center_of_buoyancy>
+        <neutrally_buoyant>0</neutrally_buoyant>
+        <center_of_volume>1 2 3</center_of_volume>
+        <volume>50</volume>
+        <visual>
+            <geometry>
+                <box size="${axle_s}"/>
+            </geometry>
+        </visual>
+        <collision>
+                <geometry>
+                    <box size="${axle_s}"/>
+                </geometry>
+            </collision>
+            <inertial>
+                <mass value="0.2"/>
+                <inertia ixx="0.4" ixy="0.0" ixz="0.0" iyy="0.4" iyz="0.0" izz="0.2"/>
+            </inertial>
+    </link>
+
+    <joint name="base_to_${prefix}_axle" type="fixed">
+        <parent link="base_link"/>
+        <child link="${prefix}_axle"/>
+        <origin xyz="${reflect *0.3} 0 0"/>
+    </joint>
+    <gazebo reference="${prefix}_axle">
+            <material>Gazebo/Black</material>
+        </gazebo>
+    </xacro:macro>
+    <xacro:axle prefix="front" reflect="1"/>
+    <xacro:axle prefix="back" reflect="-1"/>
+    
+    <xacro:macro name="thruster" params="prefix suffix reflect">
+    <link name="${prefix}_${suffix}_thruster">
+        <visual>
+            <geometry>
+                <cylinder length="0.05" radius="0.1"/>
+            </geometry>
+            <origin xyz="-0.02 ${reflect*0.03} 0"/>
+        </visual>
+        <collision>
+                <geometry>
+                    <cylinder length="0.05" radius="0.1"/>
+                </geometry>
+            </collision>
+            <inertial>
+                <mass value="0.2"/>
+                <inertia ixx="0.4" ixy="0.0" ixz="0.0" iyy="0.4" iyz="0.0" izz="0.2"/>
+            </inertial>
+    </link>
+
+    <joint name="base_to_${prefix}_${suffix}_thruster" type="continuous">
+        <parent link="${prefix}_axle"/>
+        <child link="${prefix}_${suffix}_thruster"/>
+        <axis xyz="${axis_o}"/>
+        <origin xyz="0 ${reflect*0.15} 0"/>
+    </joint>
+    <gazebo reference="${prefix}_${suffix}_thruster">
+            <material>Gazebo/White</material>
+        </gazebo>
+        <transmission name="${prefix}_${suffix}_thruster_transmission">
+            <type>transmission_interface/SimpleTransmission</type>
+            <actuator name="${prefix}_${suffix}_thruster_motor">
+                <mechanicalReduction>1</mechanicalReduction>
+            </actuator>
+            <joint name="base_to_${prefix}_${suffix}_thruster">
+                <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            </joint>
+        </transmission>
+    </xacro:macro>
+    <xacro:thruster prefix="front" suffix="left"  reflect="1"  />
+    <xacro:thruster prefix="front" suffix="right" reflect="-1" />
+    <xacro:thruster prefix="back"  suffix="left"  reflect="1"  />
+    <xacro:thruster prefix="back"  suffix="right" reflect="-1" />
+    
+
+
+
+</robot>

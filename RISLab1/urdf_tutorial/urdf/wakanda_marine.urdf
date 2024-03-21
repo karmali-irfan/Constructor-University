@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+
+
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="wakanda_marine">
+
+    <material name="white">
+        <color rgba="1 1 1 1"/>
+    </material>
+
+    <material name="gray">
+        <color rgba="0.5 0.5 0.5 1"/>
+    </material>
+    
+    <material name="black">
+        <color rgba="0 0 0 1"/>
+    </material>
+
+
+<xacro:property name="axis_o" value="0 1 0"/>
+<xacro:property name="axle_s" value="0.07 0.3 0.07"/>
+
+
+    <link name="base_link">
+        <visual>
+            <geometry>
+                <box size="0.8 0.2 0.1"/>
+            </geometry>
+            <material name="white"/>
+        </visual>
+    </link>
+
+    <link name="front_axle">
+        <visual>
+            <geometry>
+                <box size="${axle_s}"/>
+            </geometry>
+            <material name="black"/>
+        </visual>
+    </link>
+
+    <joint name="base_to_front_axle" type="fixed">
+        <parent link="base_link"/>
+        <child link="front_axle"/>
+        <origin xyz="0.3 0 0"/>
+    </joint>
+
+    <link name="back_axle">
+        <visual>
+            <geometry>
+                <box size="${axle_s}"/>
+            </geometry>
+            <material name="black"/>
+        </visual>
+    </link>
+
+    <joint name="base_to_back_axle" type="fixed">
+        <parent link="base_link"/>
+        <child link="back_axle"/>
+        <origin xyz="-0.3 0 0"/>
+    </joint>
+    
+    <link name="left_front_thruster">
+        <visual>
+            <geometry>
+                <cylinder length="0.05" radius="0.1"/>
+            </geometry>
+            <origin xyz="-0.02 0.03 0"/>
+            <material name="white"/>
+        </visual>
+    </link>
+
+    <joint name="base_to_left_front_thruster" type="continuous">
+        <parent link="front_axle"/>
+        <child link="left_front_thruster"/>
+        <axis xyz="${axis_o}"/>
+        <origin xyz="0 0.15 0"/>
+    </joint>
+
+    <link name="right_front_thruster">
+        <visual>
+            <geometry>
+                <cylinder length="0.05" radius="0.1"/>
+            </geometry>
+            <origin xyz="-0.02 -0.03 0"/>
+            <material name="white"/>
+        </visual>
+    </link>
+
+    <joint name="base_to_right_front_thruster" type="continuous">
+        <parent link="front_axle"/>
+        <child link="right_front_thruster"/>
+        <axis xyz="${axis_o}"/>
+        <origin xyz="0 -0.15 0"/>
+    </joint>
+
+    <link name="left_back_thruster">
+        <visual>
+            <geometry>
+                <cylinder length="0.05" radius="0.1"/>
+            </geometry>
+            <origin xyz="-0.02 0.03 0"/>
+            <material name="white"/>
+        </visual>
+    </link>
+
+    <joint name="base_to_left_back_thruster" type="continuous">
+        <parent link="back_axle"/>
+        <child link="left_back_thruster"/>
+        <axis xyz="${axis_o}"/>
+        <origin xyz="0 0.15 0"/>
+    </joint>
+
+    <link name="right_back_thruster">
+        <visual>
+            <geometry>
+                <cylinder length="0.05" radius="0.1"/>
+            </geometry>
+            <origin xyz="-0.02 -0.03 0"/>
+            <material name="white"/>
+        </visual>
+    </link>
+
+    <joint name="base_to_right_back_thruster" type="continuous">
+        <parent link="back_axle"/>
+        <child link="right_back_thruster"/>
+        <axis xyz="${axis_o}"/>
+        <origin xyz="0 -0.15 0"/>
+    </joint>
+
+    <gazebo>
+        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+            <robotNamespace>/</robotNamespace>
+        </plugin>
+    </gazebo>
+</robot>

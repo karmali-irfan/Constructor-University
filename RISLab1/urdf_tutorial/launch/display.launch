@@ -1,0 +1,18 @@
+<launch>
+    <!--Open empty underwater world into Gazebo.
+    World has to be open first to be able to spawn the robot within it -->
+    <include file="$(find uuv_gazebo_worlds)/launch/empty_underwater_world.launch"/>
+
+    <!--  Load the robot description from the .xacro file-->
+    <param name="robot_description" command="xacro '$(find lab_report)/urdf_tutorial/xacro/wakanda_marine.xacro'"/>
+
+    <!--  Spawn the urdf model into gazebo-->
+    <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -model wakanda_marine"/>
+    
+    <!-- Enable teleoperation by wrench messages. This uses geometry_msgs/Wrench messages-->
+    <node name="force_keyboard_control" pkg="lab_report" type="force_keyboard_control.py" launch-prefix="gnome-terminal --" >
+        <remap from="rexrov/thruster_manager/input" to="wakanda_marine/thruster_manager/input" />
+    </node>
+
+
+</launch>

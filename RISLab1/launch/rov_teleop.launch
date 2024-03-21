@@ -1,0 +1,21 @@
+<launch>
+	<arg name="launch_gazebo" default="1"/>
+	<arg name="launch_rviz" default="1"/>
+
+	<!-- This calls the launch file that starts an empty underwater world -->
+	<include file="$(find uuv_gazebo_worlds)/launch/empty_underwater_world.launch">
+		<!-- Launch the Gazebo GUI -->
+		<arg name="gui" value="$(arg launch_gazebo)" />
+	</include>
+	
+	<!-- This calls the launch file that spawns the ROV -->
+	<include file="$(find uuv_gazebo)/launch/rexrov_demos/rexrov_default.launch">
+		<!-- Launch the RVIZ GUI -->
+		<arg name="launch_rviz" value="$(arg launch_rviz)" />
+	</include>
+	
+
+	<!-- This starts the teleop_twist_keyboard node to control the ROV -->
+	<!-- launch-prefix="gnome-terminal command" launches the node in a new terminal window -->
+	<node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="teleop" output="screen" launch-prefix="gnome-terminal --" args="cmd_vel:=rexrov/cmd_vel"/>
+</launch>
