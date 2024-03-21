@@ -14,9 +14,9 @@ In this task, we launched the uuv_gazebo/rexrov_default.launch and inspected the
 
 # Part 2: Controlling the Robot
 For the first part of Part 2, a launch file was created to launch rexrov in the world spawned by empty_underwater_world.launch, the launch file also launched the node (teleop_twist_keyboard) which was used to control the simulated ROV in the world. 
-The launch file used (rov_teleop.launch) can be found in the directory 
+The launch file used, [rov_teleop.launch](https://github.com/karmali-irfan/Constructor-University/blob/main/RISLab1/launch/rov_teleop.launch), can be found in the directory 
 
-      uuv_simulator/lab_report/lab_report/launch
+      RISLab1/launch
       
 The command below can be used to launch the file.
 
@@ -25,16 +25,16 @@ The command below can be used to launch the file.
 # Part 3: Forces and Torque Output
 For the first part of Part 3, a node was created that publishes forces and torques to control the AUV, this specific node publishes to rexrov/thruster_manager/input. The node, [force_keyboard_control.py](https://github.com/karmali-irfan/Constructor-University/blob/main/RISLab1/scripts/force_keyboard_control.py), can be found in the directory: 
 
-    uuv_simulator/lab_report/lab_report/scripts
+    RISLab1/scripts
 
 For the second part of Part 3, a launch file was created that launches the AUV and the node above. The launch file, new_wrench_control.launch, can be found in the directory:
 
-    uuv_simulator/lab_report/lab_report/launch
+    RISLab1/launch
 
 # Part 4: Creating your own Robot
 This task involves creating and controlling a robot of our own design. A urdf file [(submarine.urdf)](https://github.com/karmali-irfan/Constructor-University/blob/main/RISLab1/urdf_tutorial/urdf/wakanda_marine.urdf) that describes our simple ROV can be found in the directory path 
 
-    urdf_tutorial/urdf
+    RISLab1/urdf_tutorial/urdf
 
 The geometric shapes used include a box size for the base link and 4 cylinders for the two front thrusters and two back thrusters on both the left and right side of the base link. Below is a sample code that describes the robot:
 
