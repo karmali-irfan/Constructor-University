@@ -1,5 +1,7 @@
 # RIS Lab 1 
-This repository is created to showcase all the work we did for RIS Lab 1. The project was done in ROS and a Gazebo Simulator was used. 
+This repository is created to showcase all the work we did for RIS Lab 1. The project was done in ROS and a Gazebo Simulator was used. In the end a model of a robot was created and successfully launched in the Gazebo Simulator. 
+
+Scroll down to see pictures
 
 # About the Project
 
@@ -45,3 +47,6 @@ A launch file called [display.launch](https://github.com/karmali-irfan/Construct
 
     lab_report/urdf_tutorial/launch 
     
+  ### Wakanda_Marine Robot in the Gazebo simulation
+   <img width="611" alt="12" src="https://github.com/karmali-irfan/Constructor-University/assets/92548212/afa5b5bd-e65a-4e8e-95e3-aaef2a347140">
+ 
