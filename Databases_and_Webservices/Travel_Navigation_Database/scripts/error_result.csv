@@ -1,0 +1,65 @@
+IP,Time,Date,Error
+10.82.185.83,11:02:44,17.11.2022,"Notice:  Undefined index: access in /people/home/ikarmali/public_html/ian/header.php on line 42
+"
+10.82.185.83,11:02:49,17.11.2022,"Notice:  session_start(): A session had already been started - ignoring in /people/home/ikarmali/public_html/ian/connect.php on line 4, referer: http://clabsql.clamv.jacobs-university.de/~ikarmali/ian/forms.php
+"
+10.82.185.83,11:02:49,17.11.2022,"Notice:  session_start(): A session had already been started - ignoring in /people/home/ikarmali/public_html/ian/header.php on line 14, referer: http://clabsql.clamv.jacobs-university.de/~ikarmali/ian/forms.php
+"
+10.82.185.83,11:08:46,17.11.2022,"Parse error:  syntax error, unexpected 'session_start' (T_STRING) in /people/home/ikarmali/public_html/ian/index.php on line 9, referer: http://clabsql.clamv.jacobs-university.de/~ikarmali/ian/forms.php
+"
+10.82.185.83,11:08:55,17.11.2022,"Fatal error:  Uncaught Error: Call to undefined function init_set() in /people/home/ikarmali/public_html/ian/index.php:4\nStack trace:\n#0 {main}\n  thrown in /people/home/ikarmali/public_html/ian/index.php on line 4, referer: http://clabsql.clamv.jacobs-university.de/~ikarmali/ian/forms.php
+"
+10.82.185.83,11:08:56,17.11.2022,"Fatal error:  Uncaught Error: Call to undefined function init_set() in /people/home/ikarmali/public_html/ian/index.php:4\nStack trace:\n#0 {main}\n  thrown in /people/home/ikarmali/public_html/ian/index.php on line 4, referer: http://clabsql.clamv.jacobs-university.de/~ikarmali/ian/forms.php
+"
+10.82.185.83,11:08:56,17.11.2022,"Fatal error:  Uncaught Error: Call to undefined function init_set() in /people/home/ikarmali/public_html/ian/index.php:4\nStack trace:\n#0 {main}\n  thrown in /people/home/ikarmali/public_html/ian/index.php on line 4, referer: http://clabsql.clamv.jacobs-university.de/~ikarmali/ian/forms.php
+"
+10.82.185.83,11:08:57,17.11.2022,"Fatal error:  Uncaught Error: Call to undefined function init_set() in /people/home/ikarmali/public_html/ian/index.php:4\nStack trace:\n#0 {main}\n  thrown in /people/home/ikarmali/public_html/ian/index.php on line 4, referer: http://clabsql.clamv.jacobs-university.de/~ikarmali/ian/forms.php
+"
+10.82.185.83,11:08:57,17.11.2022,"Fatal error:  Uncaught Error: Call to undefined function init_set() in /people/home/ikarmali/public_html/ian/index.php:4\nStack trace:\n#0 {main}\n  thrown in /people/home/ikarmali/public_html/ian/index.php on line 4, referer: http://clabsql.clamv.jacobs-university.de/~ikarmali/ian/forms.php
+"
+10.82.185.83,11:09:46,17.11.2022,"Fatal error:  Uncaught Error: Call to undefined function init_set() in /people/home/ikarmali/public_html/ian/index.php:4\nStack trace:\n#0 {main}\n  thrown in /people/home/ikarmali/public_html/ian/index.php on line 4, referer: http://clabsql.clamv.jacobs-university.de/~ikarmali/ian/forms.php
+"
+10.82.185.83,11:09:47,17.11.2022,"Fatal error:  Uncaught Error: Call to undefined function init_set() in /people/home/ikarmali/public_html/ian/index.php:4\nStack trace:\n#0 {main}\n  thrown in /people/home/ikarmali/public_html/ian/index.php on line 4, referer: http://clabsql.clamv.jacobs-university.de/~ikarmali/ian/forms.php
+"
+10.82.185.83,11:09:47,17.11.2022,"Fatal error:  Uncaught Error: Call to undefined function init_set() in /people/home/ikarmali/public_html/ian/index.php:4\nStack trace:\n#0 {main}\n  thrown in /people/home/ikarmali/public_html/ian/index.php on line 4, referer: http://clabsql.clamv.jacobs-university.de/~ikarmali/ian/forms.php
+"
+10.82.185.83,11:09:47,17.11.2022,"Fatal error:  Uncaught Error: Call to undefined function init_set() in /people/home/ikarmali/public_html/ian/index.php:4\nStack trace:\n#0 {main}\n  thrown in /people/home/ikarmali/public_html/ian/index.php on line 4, referer: http://clabsql.clamv.jacobs-university.de/~ikarmali/ian/forms.php
+"
+10.82.185.83,11:09:48,17.11.2022,"Fatal error:  Uncaught Error: Call to undefined function init_set() in /people/home/ikarmali/public_html/ian/index.php:4\nStack trace:\n#0 {main}\n  thrown in /people/home/ikarmali/public_html/ian/index.php on line 4, referer: http://clabsql.clamv.jacobs-university.de/~ikarmali/ian/forms.php
+"
+10.82.185.83,11:09:48,17.11.2022,"Fatal error:  Uncaught Error: Call to undefined function init_set() in /people/home/ikarmali/public_html/ian/index.php:4\nStack trace:\n#0 {main}\n  thrown in /people/home/ikarmali/public_html/ian/index.php on line 4, referer: http://clabsql.clamv.jacobs-university.de/~ikarmali/ian/forms.php
+"
+10.82.185.83,11:09:52,17.11.2022,"Fatal error:  Uncaught Error: Call to undefined function init_set() in /people/home/ikarmali/public_html/ian/index.php:4\nStack trace:\n#0 {main}\n  thrown in /people/home/ikarmali/public_html/ian/index.php on line 4, referer: http://clabsql.clamv.jacobs-university.de/~ikarmali/ian/admin.php
+"
+10.82.185.83,11:09:59,17.11.2022,"Notice:  session_start(): A session had already been started - ignoring in /people/home/ikarmali/public_html/ian/connect.php on line 4, referer: http://clabsql.clamv.jacobs-university.de/~ikarmali/ian/admin.php
+"
+10.82.185.83,11:09:59,17.11.2022,"Notice:  session_start(): A session had already been started - ignoring in /people/home/ikarmali/public_html/ian/header.php on line 14, referer: http://clabsql.clamv.jacobs-university.de/~ikarmali/ian/admin.php
+"
+10.82.185.83,11:11:48,17.11.2022,"Notice:  session_start(): A session had already been started - ignoring in /people/home/ikarmali/public_html/ian/connect.php on line 4, referer: http://clabsql.clamv.jacobs-university.de/~ikarmali/ian/index.php
+"
+10.82.185.83,11:11:48,17.11.2022,"Notice:  session_start(): A session had already been started - ignoring in /people/home/ikarmali/public_html/ian/header.php on line 14, referer: http://clabsql.clamv.jacobs-university.de/~ikarmali/ian/index.php
+"
+10.82.185.83,11:12:31,17.11.2022,"Notice:  session_start(): A session had already been started - ignoring in /people/home/ikarmali/public_html/ian/connect.php on line 4, referer: http://clabsql.clamv.jacobs-university.de/~ikarmali/ian/admin.php
+"
+10.82.185.83,11:12:31,17.11.2022,"Notice:  session_start(): A session had already been started - ignoring in /people/home/ikarmali/public_html/ian/header.php on line 14, referer: http://clabsql.clamv.jacobs-university.de/~ikarmali/ian/admin.php
+"
+10.82.185.83,11:15:41,17.11.2022,"Notice:  session_start(): A session had already been started - ignoring in /people/home/ikarmali/public_html/ian/connect.php on line 4, referer: http://clabsql.clamv.jacobs-university.de/~ikarmali/ian/index.php
+"
+10.82.185.83,11:15:41,17.11.2022,"Notice:  session_start(): A session had already been started - ignoring in /people/home/ikarmali/public_html/ian/header.php on line 14, referer: http://clabsql.clamv.jacobs-university.de/~ikarmali/ian/index.php
+"
+10.82.185.83,11:16:22,17.11.2022,"Notice:  session_start(): A session had already been started - ignoring in /people/home/ikarmali/public_html/ian/connect.php on line 4, referer: http://clabsql.clamv.jacobs-university.de/~ikarmali/ian/index.php
+"
+10.82.185.83,11:16:22,17.11.2022,"Notice:  session_start(): A session had already been started - ignoring in /people/home/ikarmali/public_html/ian/header.php on line 14, referer: http://clabsql.clamv.jacobs-university.de/~ikarmali/ian/index.php
+"
+10.82.185.83,11:16:53,17.11.2022,"Notice:  session_start(): A session had already been started - ignoring in /people/home/ikarmali/public_html/ian/connect.php on line 4, referer: http://clabsql.clamv.jacobs-university.de/~ikarmali/ian/index.php
+"
+10.82.185.83,11:16:53,17.11.2022,"Notice:  session_start(): A session had already been started - ignoring in /people/home/ikarmali/public_html/ian/header.php on line 14, referer: http://clabsql.clamv.jacobs-university.de/~ikarmali/ian/index.php
+"
+10.82.185.83,11:17:05,17.11.2022,"Notice:  session_start(): A session had already been started - ignoring in /people/home/ikarmali/public_html/ian/connect.php on line 4, referer: http://clabsql.clamv.jacobs-university.de/~ikarmali/ian/index.php
+"
+10.82.185.83,11:17:05,17.11.2022,"Notice:  session_start(): A session had already been started - ignoring in /people/home/ikarmali/public_html/ian/header.php on line 14, referer: http://clabsql.clamv.jacobs-university.de/~ikarmali/ian/index.php
+"
+10.82.185.83,11:17:06,17.11.2022,"Notice:  session_start(): A session had already been started - ignoring in /people/home/ikarmali/public_html/ian/connect.php on line 4, referer: http://clabsql.clamv.jacobs-university.de/~ikarmali/ian/index.php
+"
+10.82.185.83,11:17:06,17.11.2022,"Notice:  session_start(): A session had already been started - ignoring in /people/home/ikarmali/public_html/ian/header.php on line 14, referer: http://clabsql.clamv.jacobs-university.de/~ikarmali/ian/index.php
+"
